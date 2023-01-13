@@ -1,0 +1,188 @@
+﻿@page "/map"
+@using MapLOGIN.Shared.Models 
+@inject IJSRuntime JSRuntime
+
+
+<div class="row">
+    <div class="col-3">
+
+        <form>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" checked id="inlineRadio1" @onchange="@(() => RadioSelection(1))">
+                <label class="form-check-label" for="inlineRadio1">オンライン</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" @onchange="@(() => RadioSelection(2))">
+                <label class="form-check-label" for="inlineRadio2">オフライン</label>
+            </div>
+        </form>
+        @* Smart HTML TOOL*@
+        @* <RadioButton Name="contact" Value="email" Checked="true" CheckMode="CheckMode.Label">E-mail</RadioButton>*@
+
+        @*   <RadioButton @ref="radiobtn" Name="mode" Value="1" ClickMode="ClickMode.Hover" Checked @onchange="@(() => RadioSelection(1))" OnCheckValue="OnCheckValue">オンライン</RadioButton>
+
+        <RadioButton @ref="radiobtn" Name="mode" Value="2" ClickMode="ClickMode.Hover" @onchange="@(() => RadioSelection(2))" OnCheckValue="OnCheckValue">オフライン</RadioButton>*@
+
+        <ul id="buttons">
+            <li><a class="GFG" @onclick="(()=>ZoomRegion(1))">大阪</a>　</li>
+            <li><a class="GFG" @onclick="(()=>ZoomRegion(2))">酒井</a></li>
+            <li><a class="GFG" @onclick="(()=>ZoomRegion(3))">神戸</a></li>
+            <li><a class="GFG" @onclick="(()=>ZoomRegion(4))">北神戸</a></li>
+            <li><a class="GFG" @onclick="(()=>ZoomRegion(0))">全体</a></li>
+        </ul>
+        <div class="col-3">緯度</div>
+        <div class="col-4"><input @bind="location.Latitude" type="text" class="text-xxl-start" /></div>
+        <div class="col-3">経度</div>
+        <div class="col-4"><input @bind="location.Longitude" type="text" class="text-xxl-start" /></div>
+
+        <div class="col-10"><button class="btn btn-success" @onclick="GetLocation" >検索</button></div>
+
+        <div class="tst-info">
+            <input type="text" id="lon-info"/>
+            <input type="text" id="lat-info"/>
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="card-body p-0">
+            @if (Mode == "2")
+            {
+                <div class="offline">
+                    <img src="@IMGRIGION" class="col-10" />
+                </div>
+            }
+            else if (Mode == "1")
+            {
+                <div class="online">
+                     <div id='mapcontainer' style='width:100%; height:70vh; z-index:0;'></div>
+                    @*<div id="mapcontainer" class="col-10" style="z-index:0;"></div>*@
+                    <div id="popup" class="ol-popup">
+
+                        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                        <div id="popup-content"></div>
+
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+</div>
+<div class="card h-60">
+    <div class="card-header d-flex-inline">
+        <span hidden>
+            Razor Components and OpenLayers JavaScript Interop basic example.
+
+            <small class="float-right">
+                Select Map:
+                <select id="layer-select">
+
+                    <option value="osm" selected>Open Street Map</option>
+                    <option value="normal.day">Normal Day</option>
+                    <option value="normal.day.transit">Normal Day Transit</option>
+                    <option value="pedestrian.day">Pedestrian Day</option>
+                    <option value="terrain.day">Terrain Day</option>
+                    <option value="satellite.day">Satellite Day</option>
+                    <option value="hybrid.day">Hybrid Day</option>
+
+                </select>
+
+            </small>
+        </span>
+    </div>
+
+</div>
+
+@code {
+
+    private string Mode = "1";
+    private string region = "0";
+    private string IMGRIGION { get; set; } = "images/全体/HanshinIMG.png";
+    private Location location = new Location();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (Mode == "1")
+        {   
+            if (firstRender)
+                await JSRuntime.InvokeVoidAsync("show_map",0);
+        }
+
+    }
+
+    private async Task GetLocation()
+    {
+
+        await JSRuntime.InvokeVoidAsync("precise_map", location.Longitude, location.Latitude);
+
+    }
+
+    public async Task RadioSelection(int selectedvalue)
+    {
+
+        //
+
+        if (selectedvalue == 1)
+        {
+            //await JSRuntime.InvokeAsync<object>("alert", selectedvalue.ToString());
+            await JSRuntime.InvokeVoidAsync("test");
+
+            Mode = "1";
+
+            StateHasChanged();
+            await JSRuntime.InvokeVoidAsync("show_map", 0);
+
+        }
+        else
+        {
+            StateHasChanged();
+            Mode = "2";
+
+            IMGRIGION = "images/全体/HanshinIMG.png";
+        }
+
+
+    }
+
+    private async Task ZoomRegion(int param)
+    {
+        if (Mode == "1")
+        {
+            await JSRuntime.InvokeVoidAsync("show_map", param);
+            StateHasChanged();
+        }
+        else
+        {
+            if (param == 0)
+            {
+                IMGRIGION = "images/全体/HanshinIMG.png";
+            }
+            else if (param == 1)
+            {
+                IMGRIGION = "images/大阪/osaka.png";
+            }
+            else if (param == 2)
+
+            {
+                IMGRIGION = "images/酒井/sakai.png";
+            }
+            else if (param == 3)
+
+            {
+                IMGRIGION = "images/神戸/kobe.png";
+            }
+            else if (param == 4)
+            {
+                IMGRIGION = "images/北神戸/kitakobe.png";
+
+            }
+
+        }
+
+
+    }
+
+   
+}

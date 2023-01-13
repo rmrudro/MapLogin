@@ -1,0 +1,12 @@
+D:\my project\Highway\MapLOGIN\Shared\bin\Debug\net6.0\MapLOGIN.Shared.deps.json
+D:\my project\Highway\MapLOGIN\Shared\bin\Debug\net6.0\MapLOGIN.Shared.dll
+D:\my project\Highway\MapLOGIN\Shared\bin\Debug\net6.0\MapLOGIN.Shared.pdb
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.csproj.AssemblyReference.cache
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.AssemblyInfoInputs.cache
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.AssemblyInfo.cs
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.csproj.CoreCompileInputs.cache
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.dll
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\refint\MapLOGIN.Shared.dll
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\MapLOGIN.Shared.pdb
+D:\my project\Highway\MapLOGIN\Shared\obj\Debug\net6.0\ref\MapLOGIN.Shared.dll

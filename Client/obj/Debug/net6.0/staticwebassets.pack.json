@@ -1,0 +1,137 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\obj\\Debug\\net6.0\\build-gz\\8MPp1UxM.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MapLOGIN.Client.styles.css",
+      "PackagePath": "staticwebassets\\MapLOGIN.Client.styles.css"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\obj\\Debug\\net6.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\obj\\Debug\\net6.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\Js\\map.js",
+      "PackagePath": "staticwebassets\\Js\\map.js"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\HanshinIMG.png",
+      "PackagePath": "staticwebassets\\images\\HanshinIMG.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\全体\\HanshinIMG.png",
+      "PackagePath": "staticwebassets\\images\\全体\\HanshinIMG.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\北神戸\\kitakobe.png",
+      "PackagePath": "staticwebassets\\images\\北神戸\\kitakobe.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\大阪\\osaka.png",
+      "PackagePath": "staticwebassets\\images\\大阪\\osaka.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\神戸\\kobe.png",
+      "PackagePath": "staticwebassets\\images\\神戸\\kobe.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\images\\酒井\\sakai.png",
+      "PackagePath": "staticwebassets\\images\\酒井\\sakai.png"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\my project\\Highway\\MapLOGIN\\Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MapLOGIN.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MapLOGIN.Client.props",
+      "PackagePath": "build\\MapLOGIN.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MapLOGIN.Client.props",
+      "PackagePath": "buildMultiTargeting\\MapLOGIN.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MapLOGIN.Client.props",
+      "PackagePath": "buildTransitive\\MapLOGIN.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
